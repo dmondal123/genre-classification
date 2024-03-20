@@ -1,0 +1,29 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='genreclassification',
+    version='0.1',
+    packages=find_packages(),
+    install_requires=[
+        'numpy',
+        'pandas',
+        'tensorflow==2.6.1',
+        'scikit-learn',
+        'gensim',
+        'plotly',
+        'collections',
+        'jsonlib-python3',
+        'shutil',
+        'tqdm',
+        'imbalanced-learn',
+        'IPython',
+        'music21',
+        'pretty_midi',
+        'typing',
+        'matplotlib',
+        'seaborn',
+        'dask',
+        'distance'
+    ],
+    python_requires='>=3.6'
+)
