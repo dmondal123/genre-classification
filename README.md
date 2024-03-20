@@ -1,7 +1,7 @@
 # Music Genre Classification using MIDI Embeddings
 
 ## Overview
-This project focuses on classifying music genres using MIDI embeddings generated from the Lakh MIDI Dataset (lmd-matched, match scores and lmd-aligned) which can be downloaded from [here](https://colinraffel.com/projects/lmd/). The goal is to develop machine learning models capable of accurately categorizing musical compositions into various genres based on their MIDI representations. The project explores different model architectures and evaluates their performance using various evaluation metrics.
+This project focuses on classifying music genres using MIDI embeddings generated from the Lakh MIDI Dataset (lmd-matched, match scores and lmd-aligned) which can be downloaded from [here](https://colinraffel.com/projects/lmd/). The data needs to be stored in a Data folder. The goal is to develop machine learning models capable of accurately categorizing musical compositions into various genres based on their MIDI representations. The project explores different model architectures and evaluates their performance using various evaluation metrics.
 
 ## Problem Statement
 The task involves classifying music genres based on MIDI embeddings, which are numerical representations of musical compositions. The problem is important for applications such as personalized music recommendation systems and organizing music libraries, where accurate genre classification is crucial for enhancing user experiences.
@@ -38,6 +38,7 @@ The task involves classifying music genres based on MIDI embeddings, which are n
 - `models/`: Saved model files.
 - `logs/`: Training logs.
 - `notebooks/`: Jupyter notebooks for data preprocessing, model training, and evaluation.
+- `src/` : Contains the functions for loading and cleaning the data, model architectue and model train files, and some miscallaneous functions.
 - `README.md`: Overview of the project and instructions for running the code.
 - `requirements.txt`: List of dependencies required to run the code.
 
