@@ -10,6 +10,7 @@ def train_rnn_with_cross_validation(model, X_train, y_train, skf):
     val_recalls = []
     val_f1_scores = []
     val_auc_rocs = []
+    histories = []  # Store history objects for each fold
 
     for i, (train_index, val_index) in enumerate(skf.split(X_train, y_train.argmax(1))):
         print(f'Fold {i+1}:')
@@ -22,8 +23,14 @@ def train_rnn_with_cross_validation(model, X_train, y_train, skf):
         x_train_fold_reshaped = np.reshape(x_train_fold, (x_train_fold.shape[0], 1, x_train_fold.shape[1]))
         x_val_fold_reshaped = np.reshape(x_val_fold, (x_val_fold.shape[0], 1, x_val_fold.shape[1]))
 
-        # Fit the RNN model
-        history = model.fit(x_train_fold_reshaped, y_train_fold, validation_data=(x_val_fold_reshaped, y_val_fold), epochs=100, batch_size=32, verbose=1)
+        # Get Keras model from RNNModel instance
+        keras_model = model.get_model()
+
+        # Fit the Keras model
+        history = keras_model.fit(x_train_fold_reshaped, y_train_fold,
+                                   validation_data=(x_val_fold_reshaped, y_val_fold),
+                                   epochs=100, batch_size=32, verbose=1)
+        histories.append(history)  # Store history object
 
         # Evaluate train and validation accuracy
         train_accuracy = history.history['accuracy'][-1]
@@ -38,7 +45,7 @@ def train_rnn_with_cross_validation(model, X_train, y_train, skf):
         logging.info(f'Fold {i+1}: Train Accuracy: {train_accuracy}, Validation Accuracy: {val_accuracy}')
 
         # Predict on validation set for further evaluation
-        y_pred_probs = model.predict(x_val_fold_reshaped)
+        y_pred_probs = keras_model.predict(x_val_fold_reshaped)
         y_pred = (y_pred_probs > 0.5).astype(int)
 
         precision, recall, f1_score, _ = precision_recall_fscore_support(y_val_fold, y_pred, average='micro')
@@ -49,4 +56,4 @@ def train_rnn_with_cross_validation(model, X_train, y_train, skf):
         val_f1_scores.append(f1_score)
         val_auc_rocs.append(auc_roc)
 
-    return train_accuracies, val_accuracies, val_precisions, val_recalls, val_f1_scores, val_auc_rocs
+    return train_accuracies, val_accuracies, val_precisions, val_recalls, val_f1_scores, val_auc_rocs, histories
