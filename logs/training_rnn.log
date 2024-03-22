@@ -1,0 +1,33 @@
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+WARNING:absl:There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.Adam`.
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+WARNING:absl:There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.Adam`.
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+WARNING:absl:There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.Adam`.
+INFO:root:Fold 1: Train Accuracy: 0.6048524975776672, Validation Accuracy: 0.5575329065322876
+INFO:root:Fold 2: Train Accuracy: 0.8010362982749939, Validation Accuracy: 0.7368934154510498
+INFO:root:Fold 3: Train Accuracy: 0.8887534141540527, Validation Accuracy: 0.8168739080429077
+INFO:root:Fold 4: Train Accuracy: 0.939957320690155, Validation Accuracy: 0.867837131023407
+INFO:root:Fold 5: Train Accuracy: 0.961901843547821, Validation Accuracy: 0.9073396921157837
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+WARNING:absl:There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.Adam`.
+INFO:root:Fold 1: Train Accuracy: 0.6078395247459412, Validation Accuracy: 0.5497318506240845
+INFO:root:Fold 2: Train Accuracy: 0.798963725566864, Validation Accuracy: 0.731285035610199
+INFO:root:Fold 3: Train Accuracy: 0.8881438374519348, Validation Accuracy: 0.8163862228393555
+INFO:root:Fold 4: Train Accuracy: 0.9391648769378662, Validation Accuracy: 0.865886390209198
+INFO:root:Fold 5: Train Accuracy: 0.9640963077545166, Validation Accuracy: 0.903925895690918
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+WARNING:absl:There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.Adam`.
+INFO:root:Fold 1: Train Accuracy: 0.48366251587867737, Validation Accuracy: 0.4583130180835724
+INFO:root:Fold 2: Train Accuracy: 0.6508991122245789, Validation Accuracy: 0.6220434308052063
+INFO:root:Fold 3: Train Accuracy: 0.7363608479499817, Validation Accuracy: 0.7027554512023926
+INFO:root:Fold 4: Train Accuracy: 0.7973178625106812, Validation Accuracy: 0.7681053280830383
+INFO:root:Fold 5: Train Accuracy: 0.838890552520752, Validation Accuracy: 0.8093147873878479
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+WARNING:absl:There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.Adam`.
+INFO:root:Fold 1: Train Accuracy: 0.9892099499702454, Validation Accuracy: 0.8500731587409973
+INFO:root:Fold 2: Train Accuracy: 0.9925022721290588, Validation Accuracy: 0.9078273773193359
+INFO:root:Fold 3: Train Accuracy: 0.9921975135803223, Validation Accuracy: 0.9307485818862915
+INFO:root:Fold 4: Train Accuracy: 0.9945748448371887, Validation Accuracy: 0.9439161419868469
+INFO:root:Fold 5: Train Accuracy: 0.993172824382782, Validation Accuracy: 0.9531821608543396
+INFO:tensorflow:Assets written to: models/model_birnn/assets
