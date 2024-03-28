@@ -44,7 +44,7 @@ The task involves classifying music genres based on MIDI embeddings, which are n
 
 ## Usage
 1. Install the project dependencies:
-```pip install genreclassification```
+```pip install -r requirements.txt```
 
 2. Clone the repository:
 ```git clone https://github.com/dmondal123/genre-classification.git```
